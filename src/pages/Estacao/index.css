@@ -1,0 +1,343 @@
+.containerEstacao {
+    background-color: #F4F6F9;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+}
+
+.containerEstacao .headerEstacao {
+    position: relative;
+    background-color: var(--secondario-cor);
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 0px
+}
+
+
+.containerEstacao .headerEstacao .headerEstacao-botao {
+    background-color: var(--principal-cor);
+    max-width: 60px;
+    width: 95%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-botao:hover {
+    transition: 0.3s;
+    scale: 1.03;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-botao .headerEstacao-botao-voltar {
+    color: var(--branco-color);
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 20px;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-logo {
+    max-width: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-logo .headerEstacao-principal-logo-item {
+    width: 100%;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-divisor {
+    width: 5px;
+    height: 40px;
+    background-color: var(--principal-cor);
+    border-radius: 10px;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px 0px;
+    background-color: var(--secondario-cor);
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-texto .headerEstacao-principal-texto-titulo {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--branco-color);
+    text-transform: uppercase;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-texto .headerEstacao-principal-texto-subtitulo {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--terceiario-color);
+}
+
+.containerEstacao .headerEstacao .headerEstacao-secundario {
+    width: 95%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 20px;
+    flex-wrap: wrap;
+}
+
+.containerEstacao .headerEstacao .headerEstacao-secundario .headerEstacao-secundario-text {
+    color: var(--branco-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-bold {
+    color: var(--cinza-color);
+}
+
+
+.containerEstacao .conteudoEstacao {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px 0px;
+    padding: 10px 0px 25px 0px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI,
+.containerEstacao .conteudoEstacao .conteudoEstacao-rotinas,
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos,
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos {
+    background-color: var(--branco-color);
+    width: 95%;
+    min-height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px 0px;
+    padding: 15px 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-titulo,
+.containerEstacao .conteudoEstacao .conteudoEstacao-rotinas .conteudoEstacao-rotinas-titulo,
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processos-titulo,
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-titulo {
+    background-color: var(--secondario-cor);
+    width: 99%;
+    padding: 10px 5px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--branco-color);
+    text-transform: uppercase;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-box,
+.containerEstacao .conteudoEstacao .conteudoEstacao-rotinas .conteudoEstacao-rotinas-box,
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box,
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box .conteudoEstacao-processo-box-item {
+    background-color: #F4F6F9;
+    max-width: 450px;
+    width: 95%;
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 0px;
+    padding: 10px 5px;
+    border-top: 5px solid #4a90e2;
+    transition: 0.3s;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box .conteudoEstacao-processo-box-item:hover, 
+.containerEstacao .conteudoEstacao .conteudoEstacao-rotinas .conteudoEstacao-rotinas-box  .conteudoEstacao-rotinas-box-item:hover, 
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-box .conteudoEstacao-KPI-box-item:hover, 
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item:hover {
+    transition: 0.3s;
+    scale: 1.03;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box .conteudoEstacao-processo-box-item .conteudoEstacao-processo-box-item-modo {
+    padding: 6px 9px;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondario-cor);
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box .conteudoEstacao-processo-box-item .conteudoEstacao-processo-box-item-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-escuro-color);
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item {
+    background-color: #F4F6F9;
+    max-width: 450px;
+    width: 95%;
+    min-height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px 0px;
+    padding: 15px 5px;
+    border-bottom: 5px solid #7ed321;
+    transition: 0.3s;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item  .conteudoEstacao-projetos-box-item-titulo {
+    padding: 6px 9px;
+    border-radius: 5px;
+    background-color: #7ed321;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondario-cor);
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 25px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item .conteudoEstacao-projetos-box-item-sprints-item-status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px 0px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item .conteudoEstacao-projetos-box-item-sprints-item-status .conteudoEstacao-projetos-box-item-sprints-item-titulo {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-escuro-color);
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item .conteudoEstacao-projetos-box-item-sprints-item-status .conteudoEstacao-projetos-box-item-sprints-item-tarefas {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item-ver-mais {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7ed321;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item-progresso {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 10px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item-progresso .conteudoEstacao-projetos-box-item-sprints-item-progresso-item {
+    background-color: var(--cinza-color);
+    width: 90%;
+    height: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item-progresso .conteudoEstacao-projetos-box-item-sprints-item-progresso-item .conteudoEstacao-projetos-box-item-sprints-item-progresso-item-bar {
+    background-color: #7ed321;
+    width: 33%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item-progresso .conteudoEstacao-projetos-box-item-sprints-item-progresso-dado {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cinza-escuro-color);
+    width: 10%;
+}
+
+
+.conteudoEstacao-projetos-statusCor {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 10px 25px;
+}
+
+.conteudoEstacao-projetos-statusCor .conteudoEstacao-projetos-statusCor-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px 10px;
+}
+
+.conteudoEstacao-projetos-statusCor .conteudoEstacao-projetos-statusCor-item .conteudoEstacao-projetos-statusCor-item-status {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.conteudoEstacao-projetos-statusCor .conteudoEstacao-projetos-statusCor-item .conteudoEstacao-projetos-statusCor-item-titulo {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cinza-escuro-color);
+}

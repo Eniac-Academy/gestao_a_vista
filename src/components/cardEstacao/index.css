@@ -1,0 +1,64 @@
+
+.card {
+    background: linear-gradient(to bottom, var(--dev-primary), var(--dev-primary));
+    border: 1px solid var(--dev-secondary);
+    max-width: 300px;
+    width: 95%;
+    min-height: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 0px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transition: 0.3s;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.card .card-icone {
+    background-color: var(--dev-secondary);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-icone .card-icone-item {
+    color: var(--branco-color);
+}
+
+.card .card-titulo {
+    width: 95%;
+    text-align: center;
+    color: var(--branco-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card .card-descricao {
+    width: 90%;
+    text-align: center;
+    color: var(--branco-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card .card-projetos {
+    width: 80%;
+    background-color: var(--dev-secondary);
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco-color);
+}

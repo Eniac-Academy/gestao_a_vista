@@ -1,0 +1,31 @@
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-box .conteudoEstacao-KPI-box-item {
+    background-color: #F4F6F9;
+    max-width: 200px;
+    width: 95%;
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0px;
+    padding: 10px 5px;
+    transition: 0.3s;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-box .conteudoEstacao-KPI-box-item .conteudoEstacao-KPI-box-item-modo {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--secondario-cor);
+    width: 100%;
+    text-align: center;
+}
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-KPI .conteudoEstacao-KPI-box .conteudoEstacao-KPI-box-item .conteudoEstacao-KPI-box-item-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--cinza-escuro-color);
+    width: 100%;
+    text-align: center;
+    
+}

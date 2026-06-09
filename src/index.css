@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --principal-cor: #0F172A;
+    --secondario-cor: #222E73;
+    --terceiario-color: #ae4f7b;
+    --quarto-color: #b55c85;
+    --azul-color: #37668c;
+    --verde-color: #43cb6c;
+    --cinza-color: #b9b4b4;
+    --cinza-escuro-color: #636161;
+    --branco-color: #FFFFFF;
+
+  --dev-primary: #172554;
+  --dev-secondary: #1E40AF;
+
+  --gia-primary: #2E1065;
+  --gia-secondary: #5B21B6;
+
+
+  --asg-primary: #052E16;
+  --asg-secondary: #166534;
+
+
+  --grh-primary: #083344;
+  --grh-secondary: #155E75;
+
+
+  --gpo-primary: #431407;
+  --gpo-secondary: #9A3412;
+
+
+  --gqa-primary: #3B0764;
+  --gqa-secondary: #6B21A8;
+
+
+  --cmd-primary: #450A0A;
+  --cmd-secondary: #991B1B;
+
+
+  --mkt-primary: #500724;
+  --mkt-secondary: #9D174D;
+
+
+  --cld-primary: #042F2E;
+  --cld-secondary: #0F766E;
+
+
+  --gpv-primary: #1A2E05;
+  --gpv-secondary: #3F6212;
+
+
+  --gpf-primary: #422006;
+  --gpf-secondary: #854D0E;
+
+
+  --glc-primary: #1E1B4B;
+  --glc-secondary: #3730A3;
+
+  --get-primary: #451A03;
+  --get-secondary: #92400E;
+
+  --pca-primary: #0F172A;
+  --pca-secondary: #334155;
+
+  --nao-iniciado: #e6cff2;
+  --em-andamento: #ffe5a0;
+  --finalizado: #d4edbc;
+  --em-atraso: #ffcfc9;
+}
+
+.nao-iniciado {
+    background-color: var(--nao-iniciado);
+}
+
+.em-andamento {
+    background-color: var(--em-andamento);
+}
+
+.finalizado {
+    background-color: var(--finalizado);
+}
+
+.em-atraso {
+    background-color: var(--em-atraso);
+}

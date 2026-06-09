@@ -1,0 +1,285 @@
+.modalProjeto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 30px 15px;
+}
+
+.modalProjeto .modalProjeto-item {
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 950px;
+  width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.modalProjeto .modalProjeto-item .ModalProjeto-item-header {
+  background-color: var(--secondario-cor);
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.modalProjeto
+  .modalProjeto-item
+  .ModalProjeto-item-header
+  .ModalProjeto-item-header-titulo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modalProjeto
+  .modalProjeto-item
+  .ModalProjeto-item-header
+  .ModalProjeto-item-header-fechar {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modalProjeto .modalProjeto-item .modalProjeto-item-main {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: hidden;
+  padding-right: 5px;
+}
+
+.modalProjeto
+  .modalProjeto-item
+  .modalProjeto-item-main
+  .modalProjeto-item-main-informacoes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+}
+
+.modalProjeto
+  .modalProjeto-item
+  .modalProjeto-item-main
+  .modalProjeto-item-main-informacoes
+  .modalProjeto-item-main-informacoes-esquerda,
+.modalProjeto
+  .modalProjeto-item
+  .modalProjeto-item-main
+  .modalProjeto-item-main-informacoes
+  .modalProjeto-item-main-informacoes-direita {
+  width: calc(50% - 5px);
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalProjeto-item-main-informacoes-box {
+  width: 95%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modalProjeto-item-main-informacoes-box
+  .modalProjeto-item-main-informacoes-box-titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--secondario-cor);
+}
+
+.modalProjeto-item-main-informacoes-box
+  .modalProjeto-item-main-informacoes-box-item {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;
+}
+
+.modalProjeto-item-main-informacoes-box
+  .modalProjeto-item-main-informacoes-box-item
+  .modalProjeto-item-main-informacoes-box-item-text,
+.modalProjeto-item-main-informacoes-box
+  .modalProjeto-item-main-informacoes-box-item-modificador
+  .modalProjeto-item-main-informacoes-box-item-text,
+.modalProjeto-item-main-informacoes-box-item-drive
+  .modalProjeto-item-main-informacoes-box-item-drive-conteudo
+  .modalProjeto-item-main-informacoes-box-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cinza-escuro-color);
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+
+.modalProjeto-item-main-informacoes-box
+  .modalProjeto-item-main-informacoes-box-item-modificador
+  .modalProjeto-item-main-informacoes-box-item-titulo {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--cinza-escuro-color);
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+
+.modalProjeto-item-main-informacoes-box-item-modificador {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;
+  gap: 6px;
+}
+
+.modalProjeto-item-main-informacoes-box-item-drive {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.modalProjeto-item-main-informacoes-box-item-drive-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 10px;
+  height: auto;
+}
+
+.modalProjeto-item-main-informacoes-box-item-drive-icone {
+  max-width: 25px;
+  width: 100%;
+}
+
+.modalProjeto-item-main-informacoes-box-item-drive
+  .modalProjeto-item-main-informacoes-box-item-drive-link {
+  max-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalProjeto-item-main-informacoes-box-item-drive
+  .modalProjeto-item-main-informacoes-box-item-drive-link
+  .modalProjeto-item-main-informacoes-box-item-drive-link-icone {
+  font-size: 18px;
+  color: var(--secondario-cor);
+}
+
+.modalProjeto-item-main-atividades {
+  width: 98%;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modalProjeto-item-main-atividades .modalProjeto-item-main-atividades-box {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modalProjeto-item-main-atividades
+  .modalProjeto-item-main-atividades-box
+  .modalProjeto-item-main-atividades-box-titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--secondario-cor);
+}
+
+.modalProjeto-item-main-atividades
+  .modalProjeto-item-main-atividades-box
+  .modalProjeto-item-main-atividades-box-item {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;
+}
+
+.modalProjeto-item-main-atividades
+  .modalProjeto-item-main-atividades-box
+  .modalProjeto-item-main-atividades-box-item
+  .modalProjeto-item-main-atividades-box-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cinza-escuro-color);
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .modalProjeto
+    .modalProjeto-item
+    .modalProjeto-item-main
+    .modalProjeto-item-main-informacoes
+    .modalProjeto-item-main-informacoes-esquerda,
+  .modalProjeto
+    .modalProjeto-item
+    .modalProjeto-item-main
+    .modalProjeto-item-main-informacoes
+    .modalProjeto-item-main-informacoes-direita {
+    width: 100%;
+  }
+}
