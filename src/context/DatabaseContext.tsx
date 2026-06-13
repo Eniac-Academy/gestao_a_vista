@@ -3,8 +3,9 @@ import {
   useContext,
   useEffect,
   useState,
-  ReactNode
 } from "react";
+
+import type { ReactNode } from "react";
 
 import { getData } from "../services/api";
 import { stations } from "../data/stations";
@@ -43,25 +44,24 @@ export function DatabaseProvider({
         const mergedData:
           Record<string, any> = {};
 
-        Object.keys(stations)
-          .forEach((key) => {
+        Object.entries(stations).forEach(
+          ([key, station]) => {
 
             mergedData[key] = {
 
-              ...stations[key],
+              ...station,
 
               ...(apiData[key] || {
-
                 projects: [],
                 processes: [],
                 routines: [],
                 shifts: []
-
               })
 
             };
 
-          });
+          }
+        );
 
         setDatabase(
           mergedData

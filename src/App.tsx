@@ -1,5 +1,5 @@
 // Importação da biblioteca de rotas
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter , Route, Routes } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -10,13 +10,13 @@ import Estacao from "./pages/Estacao";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/estacao/:sigla" element={<Estacao />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter >
   );
 }
 
