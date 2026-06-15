@@ -283,3 +283,16 @@
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .modalProjeto .modalProjeto-item .ModalProjeto-item-header {
+    flex-direction: column-reverse;
+  }
+
+  .modalProjeto
+  .modalProjeto-item
+  .ModalProjeto-item-header
+  .ModalProjeto-item-header-titulo {
+    text-align: center;
+  }
+}

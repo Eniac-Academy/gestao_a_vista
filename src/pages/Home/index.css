@@ -172,3 +172,46 @@
         transform: rotate(360deg);
     }
 }
+
+
+
+@media (max-width: 550px) {
+    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .conteudoApp .conteudoApp-box .conteudoApp-box-descricao {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .containerApp .conteudoApp-estacao .conteudoApp-estacao-titulo {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footerApp {
+        padding: 20px 0px;
+    }
+
+    .footerApp .footerApp-texto {
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+

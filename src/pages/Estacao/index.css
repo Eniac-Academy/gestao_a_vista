@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px 0px
+    gap: 20px 0px;
 }
 
 
@@ -236,6 +236,7 @@
     font-size: 16px;
     font-weight: 500;
     color: var(--secondario-cor);
+    text-align: center;
 }
 
 .containerEstacao .conteudoEstacao .conteudoEstacao-projetos .conteudoEstacao-projetos-box .conteudoEstacao-projetos-box-item .conteudoEstacao-projetos-box-item-sprints-item{
@@ -244,6 +245,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px 25px;
 }
 
@@ -319,6 +321,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: auto;
     gap: 10px 25px;
 }
@@ -340,4 +343,41 @@
     font-size: 14px;
     font-weight: 500;
     color: var(--cinza-escuro-color);
+}
+
+
+@media(max-width: 850px) {
+    .containerEstacao .headerEstacao .headerEstacao-botao {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: translateY(0%);
+    }
+
+    .containerEstacao .headerEstacao .headerEstacao-principal {
+        flex-direction: column;
+    }
+
+    .containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-divisor {
+        width: 80px;
+        height: 5px;
+        background-color: var(--principal-cor);
+        border-radius: 10px;
+    }
+
+    .containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-texto .headerEstacao-principal-texto-titulo  {
+        text-align: center;
+        width: 95%;
+    }
+
+    .containerEstacao .headerEstacao .headerEstacao-principal .headerEstacao-principal-texto .headerEstacao-principal-texto-subtitulo  {
+        text-align: center;
+        width: 95%;
+    }
+}
+
+@media (max-width: 550px) {
+    .containerEstacao .headerEstacao .headerEstacao-secundario {
+        flex-direction: column;
+    }
 }

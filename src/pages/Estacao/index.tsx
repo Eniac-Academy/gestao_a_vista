@@ -134,7 +134,7 @@ function Estacao() {
               })
             ) : (
               <p className="conteudoEstacao-processo-box-vazio">
-                Nenhuma rotina cadastrada
+                Nenhum processo cadastrado
               </p>
             )}
           </article>
@@ -196,7 +196,7 @@ function Estacao() {
               })
             ) : (
               <p className="conteudoEstacao-processo-box-vazio">
-                Nenhuma rotina cadastrada
+                Nenhum projeto cadastrado
               </p>
             )}
           </article>
