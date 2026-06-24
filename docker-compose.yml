@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  gestao_a_vista:
+    container_name: gestao_a_vista_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8088:80" # <-- ALTERADO AQUI: Porta 8088 do servidor apontando para a 80 do container
+    restart: unless-stopped
