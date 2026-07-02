@@ -4,17 +4,16 @@ import "./index.css";
 // Importação da logo do ENIAC Academy
 import logo from "../../assets/logoEniacAcademy.png";
 
-// Importação do Modal de Projetos
+// Importação dos Modais
 import ModalProjetos from "../../components/ModalProjetos";
+import ModalAtividade from "../../components/ModalAtividade";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import IndicadoresKPI from "../../components/indicadoresKPI";
 
 import CardRotinas from "../../components/cardRotinas";
-
 import CardProcesso from "../../components/cardProcesso";
-
 import CardProjeto from "../../components/cardProjeto";
 
 import { useParams, useNavigate } from "react-router-dom";
@@ -25,30 +24,79 @@ import { FaArrowLeft } from "react-icons/fa6";
 
 function Estacao() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalComponente, setIsModalComponente] = useState(false);
 
   const [selectedProject, setSelectedProject] = useState<any>(null);
+  const [selectedProcess, setSelectedProcess] = useState<any>(null);
+  const [selectedRoutine, setSelectedRoutine] = useState<any>(null);
+  const [selectedAtividade, setSelectedAtividade] = useState<any>(null);
 
   const { sigla } = useParams();
 
-  const { database } = useDatabase();
-
   const navigate = useNavigate();
+
+  const { database, loading } = useDatabase();
 
   const station = Object.values(database).find(
     (item: any) => item.sigla === sigla,
   );
 
-  const projetosEmAndamento = station.projects.filter((projeto: any) =>
-      projeto["Status do Projeto"] === "Em andamento"
+  useEffect(() => {
+    if (!loading && !station) {
+      navigate("/");
+    }
+  }, [loading, station, navigate]);
+
+  if (loading || !station) {
+    return (
+      <section className="containerEstacao">
+        <div
+          style={{
+            width: "100%",
+            height: "100vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: "1.2rem",
+            fontWeight: "600",
+            color: "#222E73",
+          }}
+        >
+          Carregando informações da estação...
+        </div>
+      </section>
+    );
+  }
+
+  const projetosEmAndamento = station.projects.filter(
+    (projeto: any) =>
+      projeto["Status do Projeto"] === "Em andamento",
   );
 
   return (
     <section className="containerEstacao">
-      {isModalOpen && <ModalProjetos onClose={() => setIsModalOpen(false)} projeto={selectedProject}/>}
+      {isModalOpen && (
+        <ModalProjetos
+          onClose={() => setIsModalOpen(false)}
+          projeto={selectedProject}
+        />
+      )}
+
+      {isModalComponente && (
+        <ModalAtividade
+          onClose={() => setIsModalComponente(false)}
+          rotina={selectedRoutine}
+          processo={selectedProcess}
+          atividade={selectedAtividade}
+        />
+      )}
 
       <header className="headerEstacao">
-        <article className="headerEstacao-botao" onClick={() => navigate(`/`)}>
-            <FaArrowLeft className="headerEstacao-botao-voltar"/>
+        <article
+          className="headerEstacao-botao"
+          onClick={() => navigate("/")}
+        >
+          <FaArrowLeft className="headerEstacao-botao-voltar" />
         </article>
 
         <article className="headerEstacao-principal">
@@ -59,22 +107,29 @@ function Estacao() {
               className="headerEstacao-principal-logo-item"
             />
           </div>
+
           <div className="headerEstacao-principal-divisor"></div>
+
           <div className="headerEstacao-principal-texto">
             <p className="headerEstacao-principal-texto-titulo">
               Desenvolvimento de Sistemas
             </p>
+
             <p className="headerEstacao-principal-texto-subtitulo">
               Gestão à Vista
             </p>
           </div>
         </article>
+
         <article className="headerEstacao-secundario">
           <p className="headerEstacao-secundario-text">
-            <span className="text-bold">Líder(s):</span> {station.lider}
+            <span className="text-bold">Líder(s):</span>{" "}
+            {station.lider}
           </p>
+
           <p className="headerEstacao-secundario-text">
-            <span className="text-bold">Více Líder:</span> {station.viceLider}
+            <span className="text-bold">Více Líder:</span>{" "}
+            {station.viceLider}
           </p>
         </article>
       </header>
@@ -84,15 +139,18 @@ function Estacao() {
           <h2 className="conteudoEstacao-KPI-titulo">
             Indicadores Rápidos (KPI)
           </h2>
+
           <article className="conteudoEstacao-KPI-box">
             <IndicadoresKPI
               number={projetosEmAndamento.length}
               text="Projetos em Andamento"
             />
+
             <IndicadoresKPI
               number={station.processes.length}
               text="Processos sendo realizados"
             />
+
             <IndicadoresKPI
               number={station.routines.length}
               text="Rotinas sendo realizados"
@@ -109,6 +167,11 @@ function Estacao() {
                   key={index}
                   modo={rotina.Período}
                   text={rotina.Rotinas}
+                  onClick={() => {
+                    setSelectedAtividade('Rotina');
+                    setSelectedRoutine(rotina);
+                    setIsModalComponente(true);
+                  }}
                 />
               ))
             ) : (
@@ -129,6 +192,11 @@ function Estacao() {
                     key={index}
                     modo={processo.Periodo}
                     text={processo.Processo}
+                    onClick={() => {
+                    setSelectedAtividade('Processo');
+                    setSelectedProcess(processo);
+                    setIsModalComponente(true);
+                  }}
                   />
                 );
               })

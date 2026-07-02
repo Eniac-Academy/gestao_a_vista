@@ -1,0 +1,173 @@
+.modalAtividade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 30px 15px;
+}
+
+.modalAtividade .modalAtividade-item { 
+  background-color: #fff;
+  padding: 20px 15px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 950px;
+  width: 95%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.modalAtividade .modalAtividade-item .modalAtividade-item-header {
+  background-color: var(--secondario-cor);
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.modalAtividade .modalAtividade-item .modalAtividade-item-header .modalAtividade-item-header-titulo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modalAtividade .modalAtividade-item .modalAtividade-item-header .modalAtividade-item-header-fechar {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modalAtividade .modalAtividade-item .modalAtividade-item-main {
+  width: 100%;
+  min-height: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-x: hidden;
+  padding-right: 5px;
+}
+
+.modalAtividade .modalAtividade-item .modalAtividade-item-main .modalAtividade-item-main-informacoes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.modalAtividade-item-main-informacoes-box {
+  width: 98%;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.modalAtividade-item-main-informacoes-box
+  .modalAtividade-item-main-informacoes-box-titulo {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--secondario-cor);
+}
+
+.modalAtividade-item-main-informacoes-box .modalAtividade-item-main-informacoes-box-item {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;
+}
+
+.modalAtividade-item-main-informacoes-box .modalAtividade-item-main-informacoes-box-item .modalAtividade-item-main-informacoes-box-item-text, 
+.modalAtividade-item-main-informacoes-box-item-drive .modalAtividade-item-main-informacoes-box-item-drive-conteudo
+  .modalAtividade-item-main-informacoes-box-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cinza-escuro-color);
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+
+.modalAtividade-item-main-informacoes-box-item-drive {
+  background-color: #f4f6f9;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.modalAtividade-item-main-informacoes-box-item-drive-conteudo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 10px;
+  height: auto;
+}
+
+.modalAtividade-item-main-informacoes-box-item-drive-icone {
+  max-width: 25px;
+  width: 100%;
+}
+
+.modalAtividade-item-main-informacoes-box-item-drive
+  .modalAtividade-item-main-informacoes-box-item-drive-link {
+  max-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalAtividade-item-main-informacoes-box-item-drive
+  .modalAtividade-item-main-informacoes-box-item-drive-link
+  .modalAtividade-item-main-informacoes-box-item-drive-link-icone {
+  font-size: 18px;
+  color: var(--secondario-cor);
+}
+
+@media (max-width: 400px) {
+  .modalAtividade .modalAtividade-item .modalAtividade-item-header {
+    flex-direction: column-reverse;
+  }
+
+  .modalAtividade
+  .modalAtividade-item
+  .modalAtividade-item-header
+  .modalAtividade-item-header-titulo {
+    text-align: center;
+  }
+}
+
+
+

@@ -16,8 +16,6 @@ interface ModalProjetosProps {
 
 function ModalProjetos({ onClose, projeto }: ModalProjetosProps) {
 
-  console.log(projeto);
-
   return (
     <div className="modalProjeto">
       <div className="modalProjeto-item">

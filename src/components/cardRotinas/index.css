@@ -31,3 +31,13 @@
     color: var(--cinza-escuro-color);
     text-align: center;
 } 
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-rotinas .conteudoEstacao-rotinas-box  .conteudoEstacao-rotinas-box-item  .conteudoEstacao-rotinas-box-item-vermais {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f5a623;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

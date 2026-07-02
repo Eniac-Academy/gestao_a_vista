@@ -29,3 +29,14 @@
     color: var(--cinza-escuro-color);
     text-align: center;
 }
+
+
+.containerEstacao .conteudoEstacao .conteudoEstacao-processos .conteudoEstacao-processo-box .conteudoEstacao-processo-box-item  .conteudoEstacao-processo-box-item-vermais {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a90e2;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
