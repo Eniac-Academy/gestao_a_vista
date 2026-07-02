@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Estacao from "./pages/Estacao";
 
 const basename =
-  window.location.hostname === "eniacacademy.github.io"
+  window.location.hostname === "eniac-academy.github.io"
     ? "/gestao_a_vista"
     : "";
 
