@@ -7,14 +7,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Estacao from "./pages/Estacao";
 
-const basename =
-  window.location.hostname === "eniac-academy.github.io"
-    ? "/gestao_a_vista"
-    : "";
-
 function App() {
   return (
-    <HashRouter basename={basename}>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
