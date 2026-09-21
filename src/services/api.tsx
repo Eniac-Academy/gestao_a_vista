@@ -5,6 +5,7 @@ export async function getData() {
 
     if (response.status === 200) {
         const data = await response.json();
+        console.log("Data fetched from API:", data);
         return data;
     } else {
         console.error("Error fetching data from API");

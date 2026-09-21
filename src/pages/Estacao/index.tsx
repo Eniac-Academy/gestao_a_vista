@@ -69,8 +69,7 @@ function Estacao() {
   }
 
   const projetosEmAndamento = station.projects.filter(
-    (projeto: any) =>
-      projeto["Status do Projeto"] === "Em andamento",
+    (projeto: any) => projeto["Status do Projeto"] === "Em andamento",
   );
 
   return (
@@ -92,10 +91,7 @@ function Estacao() {
       )}
 
       <header className="headerEstacao">
-        <article
-          className="headerEstacao-botao"
-          onClick={() => navigate("/")}
-        >
+        <article className="headerEstacao-botao" onClick={() => navigate(-1)}>
           <FaArrowLeft className="headerEstacao-botao-voltar" />
         </article>
 
@@ -123,13 +119,11 @@ function Estacao() {
 
         <article className="headerEstacao-secundario">
           <p className="headerEstacao-secundario-text">
-            <span className="text-bold">Líder(s):</span>{" "}
-            {station.lider}
+            <span className="text-bold">Líder(s):</span> {station.lider}
           </p>
 
           <p className="headerEstacao-secundario-text">
-            <span className="text-bold">Více Líder:</span>{" "}
-            {station.viceLider}
+            <span className="text-bold">Více Líder:</span> {station.viceLider}
           </p>
         </article>
       </header>
@@ -168,7 +162,7 @@ function Estacao() {
                   modo={rotina.Período}
                   text={rotina.Rotinas}
                   onClick={() => {
-                    setSelectedAtividade('Rotina');
+                    setSelectedAtividade("Rotina");
                     setSelectedRoutine(rotina);
                     setIsModalComponente(true);
                   }}
@@ -193,10 +187,10 @@ function Estacao() {
                     modo={processo.Periodo}
                     text={processo.Processo}
                     onClick={() => {
-                    setSelectedAtividade('Processo');
-                    setSelectedProcess(processo);
-                    setIsModalComponente(true);
-                  }}
+                      setSelectedAtividade("Processo");
+                      setSelectedProcess(processo);
+                      setIsModalComponente(true);
+                    }}
                   />
                 );
               })
@@ -256,8 +250,8 @@ function Estacao() {
                     sprint3={projeto["Sprint 3°"]}
                     sprint4={projeto["Sprint 4º"]}
                     onClick={() => {
-                        setSelectedProject(projeto);
-                        setIsModalOpen(true);
+                      setSelectedProject(projeto);
+                      setIsModalOpen(true);
                     }}
                   />
                 );

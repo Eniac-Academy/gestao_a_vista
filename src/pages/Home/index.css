@@ -1,218 +1,294 @@
 .containerApp {
-    background: linear-gradient(to bottom, var(--principal-cor), var(--secondario-cor), var(--principal-cor));
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
-    gap: 20px 0px;
+  background: linear-gradient(
+    to bottom,
+    var(--principal-cor),
+    var(--secondario-cor),
+    var(--principal-cor)
+  );
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0px;
 }
 
 .containerApp .headerApp {
-    width: 100%;
-    min-height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    border-bottom: 1px solid var(--cinza-color);
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--cinza-color);
 }
 
 .containerApp .headerApp .headerApp-logo {
-    max-width: 150px;
-    width: 95%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 150px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerApp .headerApp .headerApp-logo .headerApp-logo-item {
-    width: 100%;
+  width: 100%;
 }
 
 .conteudoApp {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 25px 0px;
-    padding: 20px 0px 50px 0px; 
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px 0px;
+  padding: 20px 0px 50px 0px;
 }
 
 .conteudoApp .conteudoApp-box {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px 0px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 0px;
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-titulo {
-    font-size: 20px;
-    font-weight: 500;
-    color: var(--terceiario-color);
-    text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--terceiario-color);
+  text-transform: uppercase;
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
-    font-size: 50px;
-    font-weight: 600;
-    color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.conteudoApp .conteudoApp-box .conteudoApp-box-titulo-secundario {
+  font-size: 35px;
+  font-weight: 500;
+  color: #b9b4b4;
+  text-align: center;
+  width: 95%;
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-descricao {
-    font-size: 18px;
-    font-weight: 400;
-    color: #b9b4b4;
-    text-align: center;
-    max-width: 600px;
-    width: 95%;
-    line-height: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #b9b4b4;
+  text-align: center;
+  max-width: 600px;
+  width: 95%;
+  line-height: 35px;
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-descricao .text-color01 {
-    color: var(--terceiario-color);
+  color: var(--terceiario-color);
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-descricao .text-color02 {
-    color: var(--verde-color);
+  color: var(--verde-color);
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-descricao .text-color03 {
-    color: var(--azul-color);
-    font-weight: 500;
+  color: var(--azul-color);
+  font-weight: 500;
 }
 
 .conteudoApp .conteudoApp-box .conteudoApp-box-divisor {
-    max-width: 200px;
-    width: 95%;
-    height: 8px;
-    border-radius: 10px;
-    background: linear-gradient(to right, var(--terceiario-color), var(--quarto-color) );
+  max-width: 200px;
+  width: 95%;
+  height: 8px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    var(--terceiario-color),
+    var(--quarto-color)
+  );
 }
 
 .containerApp .conteudoApp-estacao {
-    width: 95%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px 0px
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px 0px;
 }
 
 .containerApp .conteudoApp-estacao .conteudoApp-estacao-titulo {
-    font-size: 25px;
-    font-weight: 500;
-    width: 100%;
-    text-align: center;
-    color: var(--cinza-color);
-    text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  color: var(--cinza-color);
+  text-transform: uppercase;
 }
 
 .containerApp .conteudoApp-estacao .conteudoApp-estacao-cards {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px 25px;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 25px;
+  flex-wrap: wrap;
 }
 
+/* Grid for two rows: top (2 cards) and bottom (4 cards) */
+.containerApp .conteudoApp-estacao .conteudoApp-estacao-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.containerApp .conteudoApp-estacao .conteudoApp-estacao-grid .row {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Top row: two larger cards */
+.containerApp
+  .conteudoApp-estacao
+  .conteudoApp-estacao-grid
+  .row.top-row
+  .card {
+  flex: 0 1 45%;
+  max-width: 320px;
+}
+
+/* Bottom row: up to four cards */
+.containerApp
+  .conteudoApp-estacao
+  .conteudoApp-estacao-grid
+  .row.bottom-row
+  .card {
+  flex: 0 1 22%;
+  max-width: 320px;
+}
+
+@media (max-width: 1000px) {
+  .containerApp
+    .conteudoApp-estacao
+    .conteudoApp-estacao-grid
+    .row.bottom-row
+    .card {
+    flex: 0 1 45%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .containerApp
+    .conteudoApp-estacao
+    .conteudoApp-estacao-grid
+    .row.top-row
+    .card,
+  .containerApp
+    .conteudoApp-estacao
+    .conteudoApp-estacao-grid
+    .row.bottom-row
+    .card {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
 
 .footerApp {
-    width: 100%;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    border-top: 1px solid var(--cinza-color);
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  border-top: 1px solid var(--cinza-color);
 }
 
 .footerApp .footerApp-texto {
-    color: var(--branco-color);
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
+  color: var(--branco-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .loading-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    gap: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  gap: 15px;
 }
 
 .spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #e5e5e5;
-    border-top: 5px solid var(--terceiario-color);
-    border-radius: 50%;
-    animation: spin 1.5s linear infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top: 5px solid var(--terceiario-color);
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
 }
 
 .loading-text {
-    color: var(--branco-color);
-    font-weight: 400;
+  color: var(--branco-color);
+  font-weight: 400;
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-
 @media (max-width: 550px) {
-    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
-        font-size: 40px;
-        text-align: center;
-    }
+  .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
+    font-size: 40px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 380px) {
-    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
-        font-size: 28px;
-        text-align: center;
-    }
+  .conteudoApp .conteudoApp-box .conteudoApp-box-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+  }
 
-    .conteudoApp .conteudoApp-box .conteudoApp-box-titulo {
-        font-size: 16px;
-        text-align: center;
-    }
+  .conteudoApp .conteudoApp-box .conteudoApp-box-titulo {
+    font-size: 16px;
+    text-align: center;
+  }
 
-    .conteudoApp .conteudoApp-box .conteudoApp-box-descricao {
-        font-size: 15px;
-        text-align: center;
-    }
+  .conteudoApp .conteudoApp-box .conteudoApp-box-descricao {
+    font-size: 15px;
+    text-align: center;
+  }
 
-    .containerApp .conteudoApp-estacao .conteudoApp-estacao-titulo {
-        font-size: 18px;
-        text-align: center;
-    }
+  .containerApp .conteudoApp-estacao .conteudoApp-estacao-titulo {
+    font-size: 18px;
+    text-align: center;
+  }
 
-    .footerApp {
-        padding: 20px 0px;
-    }
+  .footerApp {
+    padding: 20px 0px;
+  }
 
-    .footerApp .footerApp-texto {
-        font-size: 14px;
-        text-align: center;
-        width: 90%;
-    }
+  .footerApp .footerApp-texto {
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+  }
 }
-
-
